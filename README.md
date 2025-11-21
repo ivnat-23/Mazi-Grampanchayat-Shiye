@@ -1,7 +1,3 @@
-This is a comprehensive, professional, and modern README file for your **Mazi Grampanchayat (मौजे शिये ग्रामपंचायत)** Android application, based on the provided project documentation.
-
------
-
 # Mazi Grampanchayat (मौजे शिये ग्रामपंचायत)
 
 An Android application designed to digitize and streamline village governance operations for the Shiye Gram Panchayat. It serves as a digital bridge between the administration and residents, providing transparent access to essential information, services, and real-time updates.
