@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "336555635895",
+    "project_id": "mazi-grampanchayat-fdf0b",
+    "storage_bucket": "mazi-grampanchayat-fdf0b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336555635895:android:0c1f55cc84d712a9140932",
+        "android_client_info": {
+          "package_name": "com.example.mazigrampanchayat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDusbDbT-uXbcfv79AYcYouJVAgpyoAnFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
