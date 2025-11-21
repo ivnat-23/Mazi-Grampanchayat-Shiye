@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">336555635895</string>
+    <string name="google_api_key" translatable="false">AIzaSyDusbDbT-uXbcfv79AYcYouJVAgpyoAnFU</string>
+    <string name="google_app_id" translatable="false">1:336555635895:android:0c1f55cc84d712a9140932</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDusbDbT-uXbcfv79AYcYouJVAgpyoAnFU</string>
+    <string name="google_storage_bucket" translatable="false">mazi-grampanchayat-fdf0b.firebasestorage.app</string>
+    <string name="project_id" translatable="false">mazi-grampanchayat-fdf0b</string>
+</resources>
