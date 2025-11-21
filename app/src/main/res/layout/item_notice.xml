@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noticeCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Priority Badge -->
+        <View
+            android:id="@+id/priorityBadge"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/circle_background" />
+
+        <!-- Notice Image -->
+        <ImageView
+            android:id="@+id/noticeImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/priorityBadge"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:background="@color/light_gray"
+            android:contentDescription="Notice Image" />
+
+        <!-- Notice Title -->
+        <TextView
+            android:id="@+id/noticeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noticeImage"
+            android:layout_marginTop="12dp"
+            android:text="सूचना शीर्षक"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Notice Date -->
+        <TextView
+            android:id="@+id/noticeDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noticeTitle"
+            android:layout_marginTop="8dp"
+            android:text="16-11-2025"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <!-- Header with Profile Picture -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/gradient_blue_header"
+        android:elevation="8dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@android:color/white"
+            android:contentDescription="Back"
+            android:elevation="4dp" />
+
+        <!-- Profile Picture Circle -->
+        <RelativeLayout
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp">
+
+
+
+            <!-- Profile icon -->
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/baseline_person_24"
+                android:scaleType="fitCenter"
+                android:elevation="2dp" />
+
+            <!-- White border circle - perfectly aligned -->
+            <View
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/profile_circle_border"
+                android:elevation="4dp" />
+        </RelativeLayout>
+
+        <!-- User Name in Header -->
+        <TextView
+            android:id="@+id/tvNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:shadowColor="#80000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="80dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="100dp">
+
+            <!-- User Information Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="वापरकर्ता माहिती"
+                        android:textSize="20sp"
+                        android:textColor="@color/primary_blue"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"
+                        android:drawableStart="@drawable/baseline_person_24"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/primary_blue"
+                        android:gravity="center_vertical" />
+
+                    <!-- Name Section -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingBottom="16dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="false"
+                        android:focusable="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="नाव"
+                            android:textSize="13sp"
+                            android:textColor="@color/secondary_text_color"
+                            android:layout_marginBottom="6dp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/baseline_person_24"
+                                android:tint="@color/primary_blue"
+                                android:layout_marginEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="17sp"
+                                android:textColor="@color/primary_text_color"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0E0E0"
+                        android:layout_marginBottom="20dp" />
+
+                    <!-- Mobile Number Section -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingBottom="16dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="false"
+                        android:focusable="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="मोबाइल नंबर"
+                            android:textSize="13sp"
+                            android:textColor="@color/secondary_text_color"
+                            android:layout_marginBottom="6dp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/baseline_phone_android_24"
+                                android:tint="@color/primary_blue"
+                                android:layout_marginEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/tvMobileNo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="17sp"
+                                android:textColor="@color/primary_text_color"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0E0E0"
+                        android:layout_marginBottom="20dp" />
+
+                    <!-- Birth Date Section -->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="false"
+                        android:focusable="false">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="जन्म तारीख"
+                            android:textSize="13sp"
+                            android:textColor="@color/secondary_text_color"
+                            android:layout_marginBottom="6dp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/baseline_calendar_month_24"
+                                android:tint="@color/primary_blue"
+                                android:layout_marginEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/tvBirthDate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="17sp"
+                                android:textColor="@color/primary_text_color"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Change Password Button Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardUseCompatPadding="true">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="पासवर्ड बदला"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/modern_button_green"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="@android:color/white"
+                    android:gravity="center"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:stateListAnimator="@null"
+                    android:elevation="0dp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"
+                android:indeterminateTint="@color/primary_blue" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Logout Button at Bottom -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="लॉगआउट"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/modern_button_red"
+            android:drawableStart="@drawable/ic_logout"
+            android:drawablePadding="12dp"
+            android:drawableTint="@android:color/white"
+            android:gravity="center"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

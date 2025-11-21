@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/section_background"
+    android:elevation="4dp"
+    android:layout_marginBottom="12dp">
+
+    <ImageView
+        android:id="@+id/sadasyaPhoto"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:src="@drawable/img_logo"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        android:clipToOutline="true"
+        android:background="@drawable/circular_border"
+        android:contentDescription="Sadasya Photo" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/sadasyaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sadasya Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text_color"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/sadasyaWardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="वॉर्ड क्र. ५"
+            android:textSize="16sp"
+            android:textColor="@color/secondary_text_color"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_call"
+                android:tint="@color/primary_blue"
+                android:contentDescription="Phone Icon" />
+
+            <TextView
+                android:id="@+id/sadasyaNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sadasya Number"
+                android:textSize="16sp"
+                android:textColor="@color/secondary_text_color"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

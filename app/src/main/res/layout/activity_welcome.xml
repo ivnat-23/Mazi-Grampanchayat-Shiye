@@ -1,0 +1,106 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/noInternet"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/nointernet"
+            android:layout_above="@+id/button"
+            android:layout_alignParentBottom="false" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:text="Retry"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10.0dip"
+            android:layout_marginEnd="10.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/login"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50.0dip"
+                android:src="@drawable/img_logo"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:text="मौजे शिये ग्रामपंचायत मध्ये आपले स्वागत आहे"
+                android:textSize="30.0dip"
+                android:textColor="#ff1e0367"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <android.widget.Button
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginStart="10.0dip"
+            android:layout_marginEnd="10.0dip"
+            android:layout_above="@+id/registration"
+            android:background="@drawable/regbutton"
+            android:padding="10.0dip"
+            android:text="लॉगिन करा"
+            android:textSize="20.0dip"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/baseline_arrow_forward_24" />
+
+        <TextView
+            android:id="@+id/registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginStart="10.0dip"
+            android:layout_marginEnd="10.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="नवीन नोंदणी करा"
+            android:textSize="20.0sp"
+            android:gravity="center"
+            android:drawablePadding="10.0dip"
+            android:drawableStart="@drawable/baseline_create_24" />
+    </RelativeLayout>
+
+</RelativeLayout>

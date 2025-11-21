@@ -1,0 +1,230 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="16dp"
+        android:background="@drawable/gradient_blue_header"
+        android:elevation="6dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_button_bg"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginStart="16dp"
+            android:text="महत्वाचे संपर्क "
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ग्रामपंचायत मौजे शिये सरपंच संपर्क"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:layout_marginBottom="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/sarpanchContactText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9011800228"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageButton
+                    android:id="@+id/callSarpanchButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_call"
+                    app:tint="#1A73E8"
+                    android:contentDescription="Call" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ग्रामपंचायत मौजे शिये उपसरपंच संपर्क"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:layout_marginBottom="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/UpsarpanchContactText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9764507274"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageButton
+                    android:id="@+id/callUpSarpanchButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_call"
+                    app:tint="#1A73E8"
+                    android:contentDescription="Call" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ग्रा. वि. अधिकारी"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:layout_marginBottom="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/adhikariContactText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7875558317"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageButton
+                    android:id="@+id/calladhikariButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_call"
+                    app:tint="#1A73E8"
+                    android:contentDescription="Call" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="तलाठी अधिकारी"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:layout_marginBottom="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/talathiContactText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9422414243"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageButton
+                    android:id="@+id/callTlathiButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_call"
+                    app:tint="#1A73E8"
+                    android:contentDescription="Call" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="प्राथमिक आरोग्य केंद्र मौजे शिये"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:layout_marginBottom="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/hospitalTextnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8805244794"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageButton
+                    android:id="@+id/callHospitalButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_call"
+                    app:tint="#1A73E8"
+                    android:contentDescription="Call" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

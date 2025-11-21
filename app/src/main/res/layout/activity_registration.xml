@@ -1,0 +1,169 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:paddingBottom="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10.0dip"
+        android:layout_above="@+id/btns"
+        android:layout_marginStart="10.0dip"
+        android:layout_marginEnd="10.0dip"
+        app:cardCornerRadius="20.0dip"
+        app:cardElevation="20.0dip">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/back_button_bg"
+                    android:contentDescription="Back"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@android:color/white" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dip"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginStart="5.0dip"
+                    android:layout_marginEnd="5.0dip"
+                    app:srcCompat="@drawable/img_logo" />
+
+                <TextView
+                    android:id="@+id/TextTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:text="नोंदणी करा"
+                    android:textSize="30.0dip"
+                    android:textColor="#ff1e0367"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:ems="10" />
+
+                <EditText
+                    android:id="@+id/idname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56.0dip"
+                    android:layout_margin="10.0dip"
+                    android:background="@drawable/custombutton"
+                    android:padding="8.0dip"
+                    android:hint="वापरकर्त्याचे नाव"
+                    android:textColor="#ff3e3b3b"
+                    android:textColorHint="#ff3e3b3b"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/baseline_person_24" />
+
+                <android.widget.Button
+                    android:id="@+id/startDatePickerButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56.0dip"
+                    android:layout_margin="10.0dip"
+                    android:background="@drawable/custombutton"
+                    android:padding="8.0dip"
+                    android:hint="जन्म तारीख"
+                    android:textAlignment="textStart"
+                    android:textSize="17.0dip"
+                    android:textColorHint="#ff3e3b3b"
+                    android:drawableStart="@drawable/baseline_calendar_month_24" />
+
+                <EditText
+                    android:id="@+id/idmobileno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56.0dip"
+                    android:layout_margin="10.0dip"
+                    android:background="@drawable/custombutton"
+                    android:padding="8.0dip"
+                    android:hint="मोबाईल नंबर"
+                    android:textColor="#ff3e3b3b"
+                    android:textColorHint="#ff3e3b3b"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:drawableStart="@drawable/baseline_phone_android_24" />
+
+                <EditText
+                    android:id="@+id/idpassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56.0dip"
+                    android:layout_margin="10.0dip"
+                    android:background="@drawable/custombutton"
+                    android:padding="8.0dip"
+                    android:hint="पासवर्ड"
+                    android:textColor="#ff3e3b3b"
+                    android:textColorHint="#ff3e3b3b"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/baseline_lock_24" />
+
+                <EditText
+                    android:id="@+id/idrepassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56.0dip"
+                    android:layout_margin="10.0dip"
+                    android:background="@drawable/custombutton"
+                    android:padding="8.0dip"
+                    android:hint="पासवर्ड पुन्हा टाका"
+                    android:textColor="#ff3e3b3b"
+                    android:textColorHint="#ff3e3b3b"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/baseline_lock_24" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <android.widget.Button
+            android:id="@+id/registration"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20.0dip"
+            android:layout_marginEnd="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/regbutton"
+            android:padding="10.0dip"
+            android:text="सेव करा"
+            android:textSize="20.0dip"
+            android:textColor="@color/white"
+            android:drawableEnd="@drawable/baseline_arrow_forward_24" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20.0dip"
+            android:layout_marginEnd="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
